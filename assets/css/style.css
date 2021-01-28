@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	line-height: 1.3;
+	font-size: 14px;
+	color: #413d4b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: 900;
+}
+
+h2,
+h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #999;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #999;
+}
+
+.shell {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.button {
+	display: inline-block;
+	padding: 9px 8px;
+	border: 1px solid #00e0d0;
+	text-decoration: none;
+	font-size: 16px;
+	letter-spacing: -1px;
+	color: #00e0d0;
+	text-transform: uppercase;
+}
+
+/* HEADER */
+
+header {
+	position: absolute;
+	width: 960px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 16px;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	padding-right: 10px;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	padding: 10px 13px;
+	list-style: none;
+}
+
+header nav ul li a:hover {
+	color: cyan;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-size: 13px;
+	transition: color 0.3s;
+}
+
+/* SECTION HERO */
+
+.section-hero {
+	position: relative;
+}
+
+.section-hero img {
+	width: 100%;
+}
+
+.section-hero .section__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 712px;
+	color: #fff;
+	text-align: center;
+}
+
+.section-hero .section__content h1 {
+	position: relative;
+	margin-bottom: 46px;
+}
+
+.section-hero .section__content h1:after {
+	content: "";
+	position: absolute;
+	bottom: -21px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 1px;
+	background-color: #00e0d0;
+}
+
+.section-hero .section__content p {
+	margin-bottom: 47px;
+	line-height: 1.71;
+}
+
+.section-hero .section__content .button {
+	text-transform: uppercase;
+	
+}
+
+/* SECTION STORY */
+
+.section-story .section__inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 0;
+}
+
+.section-story .section__image {
+	width: 320px;
+	text-align: center;
+}
+
+.section-story .section__content {
+	width: 550px;
+}
+
+.section-story .section__content p {
+	margin-bottom: 30px;
+}
+
+.section-story .section__content h2 {
+	margin-bottom: 34px;
+}
+
+.section-video {
+	background: url(../images/video-background.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.section-video .section__content {
+	text-align: center;
+	padding: 130px 0 93px;
+}
+
+.section-video .section__content h2 {
+	color: #fff;
+	padding-bottom: 78px;
+}
+
+.section-contacts h3 {
+	margin-bottom: 33px;	
+}
+
+.section-contacts .form {
+	width: 460px;
+}
+
+.section-contacts .form input {
+	width: 100%;
+	height: 45px;
+	margin-bottom: 11px;
+	border: 1px solid #999;
+	padding: 5px;
+}
+
+.section-contacts .form textarea {
+	width: 100%;
+	height: 200px;
+	border: 1px solid #999;
+	padding: 5px;	
+}
+
+.section-contacts .form .button {
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid #00e0d0;
+	width: 120px;
+}
+
+.section-contacts .section__inner {
+	margin-top: 78px;
+	margin-bottom: 66px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-contacts .sponsors {
+	width: 380px;
+}
+
+.section-contacts .sponsors h3 {
+	margin-bottom: 45px;	
+}
+
+.section-contacts .sponsors ul {
+	display: flex;	
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.section-contacts .sponsors li {
+	width: 50%;
+	margin-bottom: 20px;
+	list-style: none;
+	text-align: center;	
+}
+
+.contacts-shell {
+	width: 1300px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
